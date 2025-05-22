@@ -1,5 +1,3 @@
-# Conteúdo do arquivo dependabot.yml com configuração para NuGet em projeto .NET
-dependabot_yml = """
 # Dependabot configuration for BookSpaceApi (.NET + NuGet + GitHub Actions)
 version: 2
 updates:
@@ -15,12 +13,4 @@ updates:
     directory: "/" # Raiz do repositório
     schedule:
       interval: "monthly"
-"""
-
-# Salvar o conteúdo em um arquivo .yml
-dependabot_path = "/mnt/data/dependabot.yml"
-with open(dependabot_path, "w", encoding="utf-8") as f:
-    f.write(dependabot_yml)
-
-dependabot_path
 
