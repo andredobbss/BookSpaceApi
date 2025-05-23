@@ -79,6 +79,12 @@ query {
   }
 }
 ```
+---
+
+## 📷 Capturas de Tela
+![image](https://github.com/user-attachments/assets/f5928c13-46e0-4d8e-a6e2-66e15fac4457)
+
+---
 ## 📄 Licença
 Este projeto está licenciado sob a MIT License.
 Desenvolvido por André Dobbss
