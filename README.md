@@ -1,5 +1,7 @@
 # 📚 BookSpaceApi
 
+![GitHub repo views](https://komarev.com/ghpvc/?username=andredobbss&repo=BookSpaceApi&color=blue)
+
 API construída com **.NET Core + GraphQL** para gerenciamento de livros, autores e editoras. Ideal para estudos e experimentos com queries complexas, relacionamentos e geração de dados falsos via `Bogus`.
 
 ---
