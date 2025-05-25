@@ -1,16 +1,22 @@
-# Dependabot configuration for BookSpaceApi (.NET + NuGet + GitHub Actions)
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
 version: 2
 updates:
-  # Atualiza pacotes NuGet (projeto .NET)
+  # Atualiza pacotes NuGet do projeto .NET
   - package-ecosystem: "nuget"
-    directory: "/" # Local dos arquivos .csproj ou .sln
+    directory: "/"                # Diretório raiz onde estão os arquivos .csproj ou .sln
     schedule:
-      interval: "weekly"
+      interval: "weekly"          # Frequência: daily, weekly ou monthly
     open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "Microsoft.AspNetCore.Components.WebAssembly"
+        versions: ["<6.0.0"]      # Exemplo: ignorar versões abaixo da 6.0.0
 
-  # (Opcional) Atualiza GitHub Actions, se utilizado no repositório
+  # (Opcional) Atualiza GitHub Actions se você usar CI/CD
   - package-ecosystem: "github-actions"
-    directory: "/" # Raiz do repositório
+    directory: "/"                # Raiz do repositório
     schedule:
       interval: "monthly"
-
